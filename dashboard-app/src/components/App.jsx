@@ -1,4 +1,8 @@
 import React from "react";
+import Sidebar from "./Sidebar";
+import Weather from "./Weather";
+import Crypto from "./Crypto";
+import SuperSearch from "./SuperSearch";
 
 function App() {
     //logic and state
@@ -7,18 +11,10 @@ function App() {
     return (
         <div>
             <div className="bigbox">
-                <div className="sidebar">
-                    <h1>SideBar</h1>
-                </div>
-                <div className="weather-box">
-                    <h1>Weather Box</h1>
-                </div>
-                <div className="crypto-box">
-                    <h1>Crypto Box</h1>
-                </div>
-                <div className="super-search-box">
-                    <h1>Super Search Box</h1>
-                </div>
+                <Sidebar />
+                <Weather />
+                <Crypto />
+                <SuperSearch />
             </div>
             {/** ******************************* */}
             <div className="footer">

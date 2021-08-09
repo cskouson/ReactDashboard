@@ -1,7 +1,8 @@
  body {
-    background-image: url("images/double-bubble-dark.png");
+    background-image: url("images/prism.png");
     height: 100%;
     font-family: "Source Sans Pro", sans-serif;
+    overflow-x: hidden;
  }
 
 .bigbox {
@@ -16,7 +17,7 @@
     border-right: 1px solid #000000;
     border-radius: 12px; 
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(71, 70, 70);
+    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
 }
 
 .weather-box {
@@ -26,7 +27,7 @@
     margin: 0.5em;
     border-radius: 12px; 
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(71, 70, 70);
+    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
 }
 
 .crypto-box {
@@ -38,7 +39,7 @@
     border-top: 1px solid #000000;
     border-right: 1px solid #000000;
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(71, 70, 70);
+    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
 }
 
 .super-search-box {
@@ -49,7 +50,7 @@
     border-radius: 12px; 
     border-top: 1px solid #000000;
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(71, 70, 70);
+    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
 }
 
 .footer {
