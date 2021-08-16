@@ -1,6 +1,6 @@
 import React from "react";
 
-function Weather() {
+function Weather(props) {
     //state and logic
 
 

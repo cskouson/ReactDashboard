@@ -1,3 +1,4 @@
+ /* Global css for tags and element types */
  body {
     background-image: url("images/prism.png");
     height: 100%;
@@ -5,8 +6,26 @@
     overflow-x: hidden;
  }
 
+form {
+    margin: 1em;
+}
+
+.search-label {
+    margin: 0.5em;
+}
+
+.search-inputs {
+    color: rgba(0, 0, 0, 0.3);
+    width: 50%;
+    border-radius: 6px;
+    border: 2px solid #e41587
+    
+}
+
+ /* React components */ 
 .bigbox {
     display: grid;
+    color: #3f0123;
 }
 
 .sidebar {
@@ -17,19 +36,18 @@
     border-right: 1px solid #000000;
     border-radius: 12px; 
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
+    box-shadow: 0 3px 5px 1px #e41587;
 }
 
 .sidebar-button {
     background-color: rgb(141, 141, 145);
-    color: rgb(0, 0, 0);
+    color: #3f0123;
     padding: 0.5em;
     border-radius:12px;
     border: 1px solid #6d6b6b;
     width: 85%;
     font-weight: bolder;
-    text-shadow: 2px 2px #6d6b6b;
-    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
+    box-shadow: 0 3px 5px 1px #e41587;
 }
 
 .weather-box {
@@ -39,7 +57,7 @@
     margin: 0.5em;
     border-radius: 12px; 
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
+    box-shadow: 0 3px 5px 1px #e41587;
 }
 
 .crypto-box {
@@ -51,7 +69,7 @@
     border-top: 1px solid #000000;
     border-right: 1px solid #000000;
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
+    box-shadow: 0 3px 5px 1px #e41587;
 }
 
 .super-search-box {
@@ -62,7 +80,7 @@
     border-radius: 12px; 
     border-top: 1px solid #000000;
     background-color: #8d9192;
-    box-shadow: 0 3px 5px 1px rgb(0, 0, 0);
+    box-shadow: 0 3px 5px 1px #e41587;
 }
 
 .footer {

@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
+import SearchForm from "./SearchForm";
 
-function SuperSearch() {
+function SuperSearch(props) {
     //state and logic
 
 
@@ -13,6 +14,9 @@ function SuperSearch() {
     return (
         <div className="super-search-box">
             <h1>Super Search Box</h1>
+            <SearchForm form_name="Google" />
+            <SearchForm form_name="DuckDuckGo" />
+            <SearchForm form_name="Wikipedia" />
         </div>
     );
 }
