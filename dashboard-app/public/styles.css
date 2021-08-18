@@ -15,11 +15,14 @@ form {
 }
 
 .search-inputs {
-    color: rgba(0, 0, 0, 0.3);
     width: 50%;
     border-radius: 6px;
     border: 2px solid #e41587
     
+}
+
+.search-inputs::placeholder {
+    color: rgba(0, 0, 0, 0.3);
 }
 
  /* React components */ 
