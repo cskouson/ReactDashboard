@@ -14,9 +14,9 @@ function SuperSearch(props) {
     return (
         <div className="super-search-box">
             <h1>Super Search Box</h1>
-            <SearchForm form_name="Google" meth="GET" act="https://www.google.com/search" />
-            <SearchForm form_name="DuckDuckGo" />
-            <SearchForm form_name="Wikipedia" />
+            <SearchForm form_name="Google" qname="q" meth="GET" act="https://www.google.com/search" />
+            <SearchForm form_name="DuckDuckGo" qname="q" method="GET" act="https://www.duckduckgo.com/" />
+            <SearchForm form_name="Wikipedia" qname="search" method="GET" act="https://en.wikipedia.org/w/index.php/" />
         </div>
     );
 }

@@ -17,7 +17,7 @@ function SearchForm(props){
                 <input 
                     className="search-inputs" 
                     type="text" 
-                    name="q" 
+                    name={props.qname}
                     placeholder="Enter query here..." 
                     value={query} 
                     onChange={queryHandler} 
