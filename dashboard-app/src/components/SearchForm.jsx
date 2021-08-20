@@ -22,7 +22,7 @@ function SearchForm(props){
                     value={query} 
                     onChange={queryHandler} 
                 />
-                <input type="submit" />
+                <input className="submit-butt" type="submit" />
             </form>
         </div>
     );
