@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import Weather from "./Weather";
 import Crypto from "./Crypto";
 import SuperSearch from "./SuperSearch";
+require('dotenv').config();
 
 function App() {
     //logic and state
