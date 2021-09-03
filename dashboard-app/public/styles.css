@@ -10,6 +10,10 @@ form {
     margin: 1em;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .search-label {
     margin: 0.5em;
 }
@@ -39,7 +43,7 @@ form {
  /* React components */ 
 .bigbox {
     display: grid;
-    color: #3f0123;
+    color: #000000;
 }
 
 .sidebar {
@@ -55,7 +59,7 @@ form {
 
 .sidebar-button {
     background-color: rgb(141, 141, 145);
-    color: #3f0123;
+    color: #000000;
     padding: 0.5em;
     border-radius:12px;
     border: 1px solid #6d6b6b;
@@ -84,6 +88,20 @@ form {
     border-right: 1px solid #000000;
     background-color: #8d9192;
     box-shadow: 0 3px 5px 1px #15a9e4;
+}
+
+.crypto-tbl-item {
+    padding: 0 10px;
+    font-weight: bolder;
+}
+
+.crypto-price {
+    padding: 0 50px;
+}
+
+.logos {
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .super-search-box {
