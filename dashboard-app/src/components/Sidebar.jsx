@@ -15,7 +15,7 @@ function Sidebar(props) {
         <div className="sidebar">
             <h1>SideBar</h1>
             <ul>
-                <SidebarButton name="home" act="none" />
+                <SidebarButton name="Do Something?" act="none" />
             </ul>
         </div>
     );

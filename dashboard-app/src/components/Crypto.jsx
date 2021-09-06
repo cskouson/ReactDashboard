@@ -64,8 +64,8 @@ function Crypto(props) {
                 handleCryptoChange(result);
 
                 //coinpaprika isn't great, but it's free...
-            }).catch((ex) => {
-                console.log("=== Coinpaprika api request error ===")
+            }).catch((error) => {
+                console.error(error)
             })
     }, []);
 

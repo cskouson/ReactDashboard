@@ -19,7 +19,7 @@ function App() {
             </div>
             {/** ******************************* */}
             <div className="footer">
-                Copyright 2021
+                Copyright 2021 do this properly later...
             </div>
         </div>
     )

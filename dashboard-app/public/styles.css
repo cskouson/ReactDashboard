@@ -78,6 +78,12 @@ ul {
     box-shadow: 0 3px 5px 1px #15a9e4;
 }
 
+ul.weather-array li {
+    display: inline;
+    margin: 1em;
+    
+}
+
 .crypto-box {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
