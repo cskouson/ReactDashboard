@@ -55,11 +55,11 @@ function Crypto(props) {
             }).then((response) => {
 
                 const coins = response.data
-                console.log(coins)
+                //console.log(coins)
 
                 //update coins state
                 let result = coins.filter(x => x.symbol === 'ICX' || x.symbol === 'XRP' || x.symbol === 'ADA' || x.symbol === 'MATIC' || x.symbol === 'SHIB' || x.symbol === 'DOGE')
-                console.log(result[0].quotes.USD.price)
+                //console.log(result[0].quotes.USD.price)
 
                 handleCryptoChange(result);
 

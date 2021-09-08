@@ -14,9 +14,37 @@ function Weather(props) {
     ])
 
     function handleWeatherChange(newWeather) {
-        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', ]
-        let todaysDate = newWeather[0].validTime;
-        console.log('today is : ' + todaysDate);
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        //create js date from api object
+        let today = new Date(newWeather[0].validTime);
+        //get new list of next 7 days starting from todays date
+        let index = today.getDay();
+        let forecastDays = [];
+        for(let i = 0; i < 7; i++){
+            forecastDays.push(days[index]);
+            index++;
+            if(index === 7) index = 0;
+        }
+        console.log('Forecast list: ' + forecastDays);
+        
+        //get temperature list
+        let forecastTemps = [];
+        for(let i = 0; i < 7; i++){
+            forecastTemps.push(newWeather[i].maxTempF);
+        }
+        console.log(forecastTemps)
+
+        updateWeather([
+            { key: 0, day: forecastDays[0], temp: forecastTemps[0] },
+            { key: 1, day: forecastDays[1], temp: forecastTemps[1] },
+            { key: 2, day: forecastDays[2], temp: forecastTemps[2] },
+            { key: 3, day: forecastDays[3], temp: forecastTemps[3] },
+            { key: 4, day: forecastDays[4], temp: forecastTemps[4] },
+            { key: 5, day: forecastDays[5], temp: forecastTemps[5] },
+            { key: 6, day: forecastDays[6], temp: forecastTemps[6] }
+        ])
+
+
     }
 
     React.useEffect(() => {
@@ -47,7 +75,7 @@ function Weather(props) {
             <ul className="weather-array">
                 {weatherData.map((item, index) => {
                     return(
-                        <li>{item.day} - {item.temp}F</li>
+                        <li><div>{item.day}</div> <br /> <div id="temperature"> {item.temp}F</div></li>
                     )
                 })}
             </ul>

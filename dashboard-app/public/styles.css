@@ -79,9 +79,13 @@ ul {
 }
 
 ul.weather-array li {
-    display: inline;
+    display: inline-block;
     margin: 1em;
-    
+}
+
+#temperature {
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .crypto-box {
