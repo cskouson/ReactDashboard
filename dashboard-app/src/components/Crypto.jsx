@@ -72,7 +72,7 @@ function Crypto(props) {
     //return react component
     return (
         <div className="crypto-box">
-            <h1>Crypto Box</h1>
+            <h1 className="box-heading">Crypto</h1>
             <tbody id="crypto-table">
                 {ccData.map((item, index) => {
                     return (
