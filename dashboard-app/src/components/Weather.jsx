@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+//icons
 import sunny from "../logos/sunny.png";
 import cloudy from "../logos/cloudy.png";
 import kindaCloudy from "../logos/kinda_cloudy.png";
@@ -19,9 +20,13 @@ function Weather(props) {
     ])
 
     //weather type array (sunny, rainy, etc...)
-    let map = new Map();
-    map.set("Sunny", sunny);
-    map.set("Mostly Sunny", kindaCloudy);
+    let map = new Map()
+    map.set("Sunny", sunny)
+    map.set("Mostly Sunny", sunny)
+    map.set("Cloudy", cloudy)
+    map.set("Rain Showers", rainy)
+    map.set("Chance of Storms", cloudy)
+    map.set("Isolated Storms", kindaCloudy)
 
 
     function handleWeatherChange(newWeather) {
@@ -46,17 +51,21 @@ function Weather(props) {
         console.log(forecastTemps)
 
         //determine weather type and icon
-        
+        let icons = []
+        for(let i = 0; i < newWeather.length; i++){
+            if(map.has(newWeather[i].weatherPrimary)){ icons[i] = map.get(newWeather[i].weatherPrimary) } 
+            else { icons[i] = map.get("Cloudy") }
+        }
 
 
         updateWeather([
-            { key: 0, day: forecastDays[0], temp: forecastTemps[0], img: loading },
-            { key: 1, day: forecastDays[1], temp: forecastTemps[1], img: loading },
-            { key: 2, day: forecastDays[2], temp: forecastTemps[2], img: loading },
-            { key: 3, day: forecastDays[3], temp: forecastTemps[3], img: loading },
-            { key: 4, day: forecastDays[4], temp: forecastTemps[4], img: loading },
-            { key: 5, day: forecastDays[5], temp: forecastTemps[5], img: loading },
-            { key: 6, day: forecastDays[6], temp: forecastTemps[6], img: loading }
+            { key: 0, day: forecastDays[0], temp: forecastTemps[0], img: icons[0] },
+            { key: 1, day: forecastDays[1], temp: forecastTemps[1], img: icons[1] },
+            { key: 2, day: forecastDays[2], temp: forecastTemps[2], img: icons[2] },
+            { key: 3, day: forecastDays[3], temp: forecastTemps[3], img: icons[3] },
+            { key: 4, day: forecastDays[4], temp: forecastTemps[4], img: icons[4] },
+            { key: 5, day: forecastDays[5], temp: forecastTemps[5], img: icons[5] },
+            { key: 6, day: forecastDays[6], temp: forecastTemps[6], img: icons[6] }
         ])
 
     }
@@ -89,7 +98,7 @@ function Weather(props) {
                 {weatherData.map((item, index) => {
                     return(
                         <li>
-                            <div><img className="logos" alt="weath-icon" src={item.img} width="40" height="40"></img></div> <br />
+                            <div><img className="logos" alt="weather-icon" src={item.img} width="40" height="40"></img></div> <br />
                             <div>{item.day}</div> <br /> 
                             <div id="temperature"> {item.temp}F</div>
                         </li>
