@@ -1,6 +1,6 @@
  /* Global css for tags and element types */
  body {
-    background-image: url("images/prism.png");
+    background-image: url("images/middleground.jpeg");
     height: 100%;
     font-family: "Source Sans Pro", sans-serif;
     overflow-x: hidden;
@@ -18,32 +18,6 @@ ul {
     text-align: center;
 }
 
-.search-label {
-    margin: 0.5em;
-}
-
-.search-inputs {
-    background-color:#a9adad;
-    width: 50%;
-    height: 2em;
-    border-radius: 6px;
-    border: 2px solid #15a9e4
-    
-}
-
- .submit-butt{
-    margin: 0.5em;
-    background-color: #8d9192;
-    height: 2.2em;
-    border-radius: 6px;
-    border: none;
-    box-shadow: 0 1px 4px 1px #15a9e4;
-}
-
-.search-inputs::placeholder {
-    color: rgba(0, 0, 0, 0.3);
-}
-
  /* React components */ 
 .bigbox {
     display: grid;
@@ -54,22 +28,23 @@ ul {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     padding: 0.5em;
-    margin: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
     border-right: 1px solid #000000;
-    border-radius: 12px; 
-    background-color: #8d9192;
+    border-radius: 3px; 
+    background-color: #cee3f7;
     box-shadow: 0 3px 5px 1px #15a9e4;
 }
 
 .sidebar-button {
-    background-color: rgb(141, 141, 145);
+    background-color: #b2d4f5;
     color: #000000;
     padding: 0.5em;
     border-radius:12px;
     border: 1px solid #6d6b6b;
     width: 85%;
     font-weight: bolder;
-    box-shadow: 0 3px 5px 1px #15a9e4;
+    box-shadow: 0 3px 5px 1px #6caec9;
 }
 
 .weather-box {
@@ -77,8 +52,9 @@ ul {
     grid-row: 1 / 3;
     padding: 0.5em;
     margin: 0.5em;
+    margin-top: 0em;
     border-radius: 12px; 
-    background-color: #8d9192;
+    background-color: #cee3f7;
     box-shadow: 0 3px 5px 1px #15a9e4;
 }
 
@@ -101,7 +77,7 @@ ul.weather-array li {
     border-radius: 12px; 
     border-top: 1px solid #000000;
     border-right: 1px solid #000000;
-    background-color: #8d9192;
+    background-color: #cee3f7;
     box-shadow: 0 3px 5px 1px #15a9e4;
 }
 
@@ -126,18 +102,37 @@ ul.weather-array li {
     margin: 0.5em;
     border-radius: 12px; 
     border-top: 1px solid #000000;
-    background-color: #8d9192;
+    background-color: #cee3f7;
     box-shadow: 0 3px 5px 1px #15a9e4;
 }
 
-.footer {
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 0.3em;
-    border-radius: 7px; 
+#search-inputs-inner {
+    background-color:#8099be;
+    height: 2em;
+    border-radius: 6px;
+    border: 2px solid #15a9e4;
+    width: 85%;
+    margin: 0.3em;
+}
+
+.search-inputs::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#submit-butt-inner {
+    background-color: #cee3f7;
+    height: 2.2em;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 1px 3px 1px #2aafe4;
+    margin-left: 0.3em;
+}
+
+#footer {
+    grid-column: 1 / 6;
+    grid-row: 5;
     text-align: center;
-    color: rgb(148, 149, 150);
+    background-color: #cee3f7;
+    color: #000000;
+    box-shadow: 0 3px 5px 1px #15a9e4;
 }

@@ -1,28 +1,28 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-function SearchForm(props){
+function SearchForm(props) {
     //logic and state
     const [query, setQuery] = useState("");
 
-    function queryHandler(e){
+    function queryHandler(e) {
         const newVal = e.target.value;
         setQuery(newVal);
     }
 
     //react component
-    return(
+    return (
         <div>
             <form method={props.meth} action={props.act}>
-                <label className="search-label" for={props.form_name}>{props.form_name}</label>
-                <input 
-                    className="search-inputs" 
-                    type="text" 
+                <label for={props.form_name}>{props.form_name}</label><br />
+                <input id="search-inputs-inner"
+
+                    type="text"
                     name={props.qname}
-                    placeholder="Enter query here..." 
-                    value={query} 
-                    onChange={queryHandler} 
+                    placeholder="Enter query here..."
+                    value={query}
+                    onChange={queryHandler}
                 />
-                <input className="submit-butt" type="submit" />
+                <input id="submit-butt-inner" type="submit" />
             </form>
         </div>
     );

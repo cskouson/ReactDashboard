@@ -7,9 +7,9 @@ function Sidebar(props) {
     //react component
     return (
         <div className="sidebar">
-            <h1 className="box-heading">SideBar</h1>
+            <h1 className="box-heading">News Feed</h1>
             <ul>
-                <SidebarButton name="Do Something?" act="none" />
+                <SidebarButton name="Refresh" act="none" />
             </ul>
         </div>
     );

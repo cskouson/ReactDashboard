@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import Weather from "./Weather";
 import Crypto from "./Crypto";
 import SuperSearch from "./SuperSearch";
+import Footer from "./Footer";
 require('dotenv').config();
 
 function App() {
@@ -16,11 +17,10 @@ function App() {
                 <Weather />
                 <Crypto />
                 <SuperSearch />
+                <Footer />
             </div>
             {/** ******************************* */}
-            <div className="footer">
-                Copyright 2021 do this properly later...
-            </div>
+
         </div>
     )
 }

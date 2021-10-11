@@ -3,6 +3,8 @@ import SearchForm from "./SearchForm";
 
 function SuperSearch(props) {
 
+    
+
     //react component
     return (
         <div className="super-search-box">

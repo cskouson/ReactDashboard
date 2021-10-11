@@ -22,11 +22,11 @@ function Weather(props) {
     //weather type array (sunny, rainy, etc...)
     let map = new Map()
     map.set("Sunny", sunny)
-    map.set("Mostly Sunny", sunny)
+    map.set("Mostly Sunny", kindaCloudy)
     map.set("Cloudy", cloudy)
     map.set("Rain Showers", rainy)
     map.set("Chance of Storms", cloudy)
-    map.set("Isolated Storms", kindaCloudy)
+    map.set("Isolated Storms", cloudy)
 
 
     function handleWeatherChange(newWeather) {
