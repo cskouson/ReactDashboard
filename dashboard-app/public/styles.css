@@ -22,6 +22,7 @@ ul {
 .bigbox {
     display: grid;
     color: #000000;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -34,6 +35,15 @@ ul {
     border-radius: 3px; 
     background-color: #cee3f7;
     box-shadow: 0 3px 5px 1px #15a9e4;
+}
+
+.news-links {
+    
+}
+
+#news-horiz-line {
+    opacity: 0.3;
+    margin: 1em;
 }
 
 .sidebar-button {
@@ -53,7 +63,7 @@ ul {
     padding: 0.5em;
     margin: 0.5em;
     margin-top: 0em;
-    border-radius: 12px; 
+    border-radius: 3px; 
     background-color: #cee3f7;
     box-shadow: 0 3px 5px 1px #15a9e4;
 }
@@ -74,7 +84,7 @@ ul.weather-array li {
     grid-row: 3 / 4;
     padding: 0.5em;
     margin: 0.5em;
-    border-radius: 12px; 
+    border-radius: 3px; 
     border-top: 1px solid #000000;
     border-right: 1px solid #000000;
     background-color: #cee3f7;
@@ -100,7 +110,7 @@ ul.weather-array li {
     grid-row: 3 / 4;
     padding: 0.5em;
     margin: 0.5em;
-    border-radius: 12px; 
+    border-radius: 3px; 
     border-top: 1px solid #000000;
     background-color: #cee3f7;
     box-shadow: 0 3px 5px 1px #15a9e4;

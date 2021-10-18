@@ -67,7 +67,7 @@ function Crypto(props) {
             }).catch((error) => {
                 console.error(error)
             })
-    }, []);
+    }, []);//end api work
 
     //return react component
     return (
