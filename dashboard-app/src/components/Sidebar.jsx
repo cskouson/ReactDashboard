@@ -33,7 +33,7 @@ function Sidebar(props) {
                 params: { lang: 'en', media: 'True' },
                 headers: {
                     'x-rapidapi-host': 'newscatcher.p.rapidapi.com',
-                    'x-rapidapi-key': '0bff5bf751msh8ca7443f72a2cd9p1d3968jsn812b53fee950'
+                    'x-rapidapi-key': process.env.REACT_APP_NEWS_KEY
                 }
             }).then((resp) => {//handle response
                 const data = resp.data.articles
